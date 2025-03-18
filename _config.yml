@@ -1,4 +1,65 @@
-# _config.yml
+
+# Configuración básica
 title: CriptoEduAr
 description: Plataforma educativa sobre criptomonedas y blockchain.
+baseurl: "" # La URL base para el proyecto, por ejemplo "/blog"
+url: "https://ariasalejo.github.io/Cripto_eduar" # La URL de tu sitio
+
+# Tema
 theme: jekyll-theme-minimal
+
+# Configuración de los plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Configuración de Jekyll Feed
+feed:
+  path: feed.xml
+
+# Configuración de Jekyll SEO Tag
+jekyll_seo_tag:
+  social:
+    name: CriptoEduAr
+    image: /assets/images/favicon.png
+    twitter: ariasalejo
+    facebook: ariasalejo
+
+# Configuración del autor
+author:
+  name: "Eduardo Arias"
+  email: "ariasalejo@example.com"
+  twitter: "ariasalejo"
+  github: "ariasalejo"
+
+# Markdown y sintaxis de código
+markdown: kramdown
+highlighter: rouge
+
+# Exclusiones
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules/
+  - vendor/
+
+# Configuración de la paginación
+paginate: 5
+paginate_path: "/page:num"
+
+# Configuración avanzada
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Personalización del tema
+sass:
+  style: compressed
+
+# Configuración del servidor local
+host: 0.0.0.0
+port: 4000
